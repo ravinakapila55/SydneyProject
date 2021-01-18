@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sydneyproject">
+
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+   android:name=".util.MyApplication"
+   android:allowBackup="true"
+   android:icon="@drawable/ic_launcher"
+   android:label="@string/app_name"
+   android:roundIcon="@drawable/ic_launcher"
+   android:supportsRtl="true"
+   android:largeHeap="true"
+   android:usesCleartextTraffic="true"
+   android:theme="@style/AppTheme">
+
+         <activity
+        android:name=".SplashScreen"
+        android:screenOrientation="portrait"
+        android:windowSoftInputMode="stateAlwaysHidden">
+
+        <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+
+        </activity>
+
+        <activity android:name=".welcome.WelcomeScreen"
+        android:screenOrientation="portrait"
+        />
+
+        <activity android:name=".Signin"
+        android:screenOrientation="portrait"
+        />
+
+        <activity android:name=".profile.Profile"
+        android:screenOrientation="portrait"
+        />
+
+        <activity android:name=".FaqScreen"
+        android:screenOrientation="portrait"
+        />
+
+        <activity android:name=".notification.NotificationList"
+        android:screenOrientation="portrait"
+        />
+
+         <activity android:name=".SignUp"
+         android:screenOrientation="portrait"
+         />
+
+         <activity android:name=".otp.VerifyMobileNumber"
+         android:screenOrientation="portrait"
+         />
+
+        <activity android:name=".savedBills.SavedBillDetails"
+         android:screenOrientation="portrait"
+         />
+
+         <activity android:name=".Drawer"
+          android:screenOrientation="portrait"
+          android:hardwareAccelerated="true"/>
+
+        <activity android:name=".plans.ChoosePlans"
+         android:screenOrientation="portrait"
+         />
+
+          <activity android:name=".payOptions.ChoosePayOptions"
+         android:screenOrientation="portrait"
+         />
+
+        <activity android:name=".bill.HomePageData"
+         android:screenOrientation="portrait"
+         />
+
+        <activity android:name=".savedBills.SavedBills"
+         android:screenOrientation="portrait"
+         />
+
+          <activity android:name=".home.HomePage"
+         android:screenOrientation="portrait"
+         />
+
+        </application>
+
+</manifest>

@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/splash_bg">
+
+       <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="@dimen/view_50"
+        android:layout_height="@dimen/view_50"
+        android:src="@drawable/sign_in_logo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/view_65"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+
+    <TextView
+        android:id="@+id/tvLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:textColor="@color/white_color"
+        android:textSize="@dimen/txt_20"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivLogo"
+        android:layout_marginTop="@dimen/view_20"/>
+
+
+    <TextView
+        android:id="@+id/tvMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please enter your details"
+        android:textColor="@color/white_color"
+        android:textSize="@dimen/txt_16"
+        android:textStyle="normal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLabel"
+        android:layout_marginTop="@dimen/view_10"/>
+
+
+        <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email Address or Mobile no."
+        android:textColor="@color/white_color"
+        android:textSize="@dimen/txt_16"
+        android:layout_marginLeft="@dimen/view_25"
+        android:layout_marginRight="@dimen/view_25"
+        android:textStyle="normal"
+            android:textColorHint="@color/white_color"
+        android:background="@drawable/white_stroke"
+        android:padding="@dimen/view_10"
+            android:singleLine="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMsg"
+        android:layout_marginTop="@dimen/view_45"/>
+
+
+    <TextView
+        android:id="@+id/tvSignin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:textColor="@color/black"
+        android:textSize="@dimen/txt_16"
+        android:layout_marginLeft="@dimen/view_25"
+        android:layout_marginRight="@dimen/view_25"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="@drawable/white_background"
+        android:padding="@dimen/view_10"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etEmail"
+        android:layout_marginTop="@dimen/view_35"/>
+
+
+    <View
+        android:id="@+id/vLeft"
+        android:layout_width="135dp"
+        android:layout_height="1dp"
+        android:background="@color/white_color"
+        android:layout_marginLeft="@dimen/view_25"
+        android:padding="@dimen/view_10"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSignin"
+        android:layout_marginTop="@dimen/view_65"
+        />
+
+
+    <TextView
+        android:id="@+id/tvOr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OR"
+        android:textColor="@color/white_color"
+        android:textSize="@dimen/txt_16"
+        android:textStyle="normal"
+        android:gravity="center"
+        android:padding="@dimen/view_10"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSignin"
+        android:layout_marginTop="@dimen/view_45"/>
+
+    <View
+        android:id="@+id/vRight"
+        android:layout_width="135dp"
+        android:layout_height="1dp"
+        android:background="@color/white_color"
+        android:layout_marginRight="@dimen/view_25"
+        android:padding="@dimen/view_10"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSignin"
+        android:layout_marginTop="@dimen/view_65"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ccSocial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="@dimen/view_50"
+        android:layout_marginLeft="@dimen/view_80"
+        android:layout_marginRight="@dimen/view_60"
+        app:layout_constraintTop_toBottomOf="@+id/vLeft">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ccGmail"
+            android:layout_width="@dimen/view_40"
+            android:layout_height="@dimen/view_40"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="@dimen/view_60"
+            android:layout_marginRight="@dimen/view_20"
+            android:background="@drawable/white_circle_background">
+
+
+            <ImageView
+                android:id="@+id/ivGoogle"
+                android:layout_width="@dimen/view_30"
+                android:layout_height="@dimen/view_30"
+                android:src="@drawable/google"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ccFb"
+            android:layout_width="@dimen/view_40"
+            android:layout_height="@dimen/view_40"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/ccGmail"
+            android:layout_marginLeft="@dimen/view_30"
+            android:layout_marginRight="@dimen/view_30"
+            android:background="@drawable/white_circle_background">
+
+
+            <ImageView
+                android:id="@+id/ivFb"
+                android:layout_width="@dimen/view_30"
+                android:layout_height="@dimen/view_30"
+                android:src="@drawable/fb"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ccApple"
+            android:layout_width="@dimen/view_40"
+            android:layout_height="@dimen/view_40"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginRight="@dimen/view_50"
+            android:background="@drawable/white_circle_background">
+
+            <ImageView
+                android:id="@+id/ivApple"
+                android:layout_width="@dimen/view_30"
+                android:layout_height="@dimen/view_30"
+                android:src="@drawable/apple"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:layout_editor_absoluteX="236dp"
+                tools:layout_editor_absoluteY="5dp" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ccText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="@dimen/view_30"
+        android:layout_marginLeft="@dimen/view_20"
+        android:layout_marginRight="@dimen/view_20"
+        app:layout_constraintTop_toBottomOf="@+id/ccSocial">
+
+
+        <TextView
+            android:id="@+id/tvDont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account ?"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/txt_16"
+            android:layout_marginLeft="@dimen/view_25"
+            android:layout_marginRight="@dimen/view_5"
+            android:textStyle="normal"
+            android:gravity="center"
+            android:padding="@dimen/view_1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="@dimen/view_5"/>
+
+
+        <TextView
+            android:id="@+id/tvRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register Now"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/txt_16"
+            android:layout_marginRight="@dimen/view_25"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="@dimen/view_1"
+            app:layout_constraintLeft_toRightOf="@+id/tvDont"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/view_5"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

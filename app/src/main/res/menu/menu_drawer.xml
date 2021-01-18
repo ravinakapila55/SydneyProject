@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/gHome"
+        android:visible="true"
+        android:enabled="true">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/home_side"
+        android:title="Home" />
+
+    </group>
+
+    <group
+        android:id="@+id/gProfile"
+        android:visible="true"
+        android:enabled="true">
+
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/profile_side"
+        android:title="Profile" />
+
+    </group>
+
+    <group
+        android:id="@+id/gNotiifcations"
+        android:visible="true"
+        android:enabled="true">
+
+    <item
+        android:id="@+id/notifications"
+        android:icon="@drawable/notification_side"
+        android:title="Notifications" />
+    </group>
+
+
+    <group
+        android:id="@+id/gTerms"
+        android:visible="true"
+        android:enabled="true">
+
+    <item
+        android:id="@+id/terms"
+        android:icon="@drawable/terms_side"
+        android:title="Terms &amp; Conditions" />
+
+
+</group>
+
+    <group
+        android:id="@+id/gPrivacy"
+        android:visible="true"
+        android:enabled="true">
+
+    <item
+        android:id="@+id/pricavy"
+        android:icon="@drawable/privacy_side"
+        android:title="Privacy Policy" />
+
+    </group>
+
+    <group
+        android:id="@+id/gFAQ"
+        android:visible="true"
+        android:enabled="true">
+
+    <item
+        android:id="@+id/faq"
+        android:icon="@drawable/faq_side"
+        android:title="FAQ" />
+
+    </group>
+
+
+    <group
+        android:id="@+id/gShare"
+        android:visible="true"
+        android:enabled="true">
+
+    <item
+        android:id="@+id/share"
+        android:icon="@drawable/share_side"
+        android:title="Share App" />
+
+    </group>
+
+    <group
+        android:id="@+id/gLogout"
+        android:visible="true"
+        android:enabled="true">
+
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/logout_side"
+        android:title="Logout" />
+
+    </group>
+
+
+</menu>

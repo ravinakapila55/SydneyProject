@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_bg"
+    >
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="@dimen/view_50"
+        android:layout_height="@dimen/view_50"
+        android:src="@drawable/sign_in_logo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/view_65"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tvLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose your Plan"
+        android:textColor="@color/white_color"
+        android:textSize="@dimen/txt_20"
+        android:textStyle="normal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivLogo"
+        android:layout_marginTop="@dimen/view_25"/>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ccFree"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_80"
+        android:layout_marginLeft="@dimen/view_25"
+        android:layout_marginRight="@dimen/view_25"
+        android:layout_marginBottom="@dimen/view_5"
+        android:layout_marginTop="@dimen/view_15"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLabel"
+        android:background="@drawable/white_corner_background">
+
+        <TextView
+            android:id="@+id/tvFree"
+            android:layout_width="wrap_content"
+            android:text="Free"
+            android:textStyle="bold"
+            android:textColor="@color/text_red"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textSize="@dimen/txt_16"
+            android:padding="@dimen/margin_5"
+            android:layout_marginLeft="@dimen/view_10"
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Per month"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textSize="@dimen/txt_16"
+            android:padding="@dimen/margin_5"
+            android:layout_marginRight="@dimen/view_10"
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="1 Scan a month for their 1 year"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvFree"
+            android:textSize="@dimen/txt_16"
+            android:padding="@dimen/margin_5"
+            android:layout_marginLeft="@dimen/view_10"
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_height="wrap_content"/>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ccStandard"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_80"
+        android:layout_marginLeft="@dimen/view_25"
+        android:layout_marginRight="@dimen/view_25"
+        android:layout_marginTop="@dimen/view_15"
+        android:layout_marginBottom="@dimen/view_5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ccFree"
+        android:background="@drawable/white_corner_background">
+
+        <TextView
+            android:id="@+id/tvStandard"
+            android:layout_width="wrap_content"
+            android:text="Standard"
+            android:textStyle="bold"
+            android:textColor="@color/text_red"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textSize="@dimen/txt_16"
+            android:padding="@dimen/margin_5"
+            android:layout_marginLeft="@dimen/view_10"
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Per month"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textSize="@dimen/txt_16"
+            android:padding="@dimen/margin_5"
+            android:layout_marginRight="@dimen/view_10"
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="upto 20 Scans"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvStandard"
+            android:textSize="@dimen/txt_16"
+            android:padding="@dimen/margin_5"
+            android:layout_marginLeft="@dimen/view_10"
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="$ 2.99"
+            android:textStyle="bold"
+            android:textColor="@color/text_red"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvStandard"
+            android:textSize="@dimen/txt_16"
+            android:padding="@dimen/margin_5"
+            android:layout_marginRight="@dimen/view_10"
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_height="wrap_content"/>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ccProfessional"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_80"
+        android:layout_marginLeft="@dimen/view_25"
+        android:layout_marginRight="@dimen/view_25"
+        android:layout_marginTop="@dimen/view_15"
+        android:layout_marginBottom="@dimen/view_5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ccStandard"
+        android:background="@drawable/white_corner_background">
+
+        <TextView
+            android:id="@+id/tvProfessional"
+            android:layout_width="wrap_content"
+            android:text="Professional"
+            android:textStyle="bold"
+            android:textColor="@color/text_red"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textSize="@dimen/txt_16"
+            android:padding="@dimen/margin_5"
+            android:layout_marginLeft="@dimen/view_10"
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Per month"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textSize="@dimen/txt_16"
+            android:padding="@dimen/margin_5"
+            android:layout_marginRight="@dimen/view_10"
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="unlimited scans"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvProfessional"
+            android:textSize="@dimen/txt_16"
+            android:padding="@dimen/margin_5"
+            android:layout_marginLeft="@dimen/view_10"
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="$9.99"
+            android:textStyle="bold"
+            android:textColor="@color/text_red"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvProfessional"
+            android:textSize="@dimen/txt_16"
+            android:padding="@dimen/margin_5"
+            android:layout_marginRight="@dimen/view_10"
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_height="wrap_content"/>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

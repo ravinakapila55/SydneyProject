@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/ccSaved"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_marginTop="@dimen/view_20">
+
+   <TextView
+            android:id="@+id/tvSavedLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saved Bills"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_18"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/view_15"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/ccSavedAdd"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="@dimen/view_15"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tvAddBill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View All"
+                android:textColor="@color/text_red"
+                android:textSize="@dimen/txt_14"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:textStyle="normal"
+                />
+
+            <TextView
+                android:id="@+id/tvAddPlus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:textColor="@color/text_red"
+                android:textSize="@dimen/txt_16"
+                android:textStyle="normal"
+                android:layout_marginRight="@dimen/view_15"
+                android:layout_marginLeft="@dimen/view_5"
+                app:layout_constraintLeft_toRightOf="@+id/tvAddBill"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+           <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerSaved"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_100dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_margin="@dimen/view_1"
+            android:padding="@dimen/view_1"
+            app:layout_constraintTop_toBottomOf="@+id/tvSavedLabel"/>
+
+
+   <View
+       android:id="@+id/viewww"
+       android:layout_width="match_parent"
+       android:layout_height="2dp"
+       android:background="@color/light_gray"
+       app:layout_constraintLeft_toLeftOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/recyclerSaved"
+       android:layout_marginTop="@dimen/view_5"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ccBillYouOwe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ccSaved"
+        android:layout_marginTop="@dimen/view_20">
+
+        <TextView
+            android:id="@+id/tvOweBill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bills you Owe"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_18"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/view_15"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ccBills"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/view_15"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <TextView
+                android:id="@+id/tvBills"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View All"
+                android:textColor="@color/text_red"
+                android:textSize="@dimen/txt_14"
+                android:textStyle="normal"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+
+            <TextView
+                android:id="@+id/tvBillsPlus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:textColor="@color/text_red"
+                android:textSize="@dimen/txt_16"
+                android:textStyle="normal"
+                android:layout_marginRight="@dimen/view_10"
+                android:layout_marginLeft="@dimen/view_5"
+                app:layout_constraintLeft_toRightOf="@+id/tvBills"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerbills"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_100dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_margin="@dimen/view_1"
+            android:padding="@dimen/view_1"
+            app:layout_constraintTop_toBottomOf="@+id/tvOweBill"/>
+
+        <View
+        android:id="@+id/viewww1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/light_gray"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerbills"
+        android:layout_marginTop="@dimen/view_5"/>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ccTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ccBillYouOwe"
+        android:layout_marginTop="@dimen/view_20">
+
+            <TextView
+            android:id="@+id/tvTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Top Friends"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_18"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/view_15"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ccFriends"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/view_15"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tvTop11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View All"
+                android:textColor="@color/text_red"
+                android:textSize="@dimen/txt_14"
+                android:textStyle="normal"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/tvTop11Plus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:textColor="@color/text_red"
+                android:textSize="@dimen/txt_16"
+                android:textStyle="normal"
+                android:layout_marginRight="@dimen/view_10"
+                android:layout_marginLeft="@dimen/view_5"
+                app:layout_constraintLeft_toRightOf="@+id/tvTop11"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+       <androidx.recyclerview.widget.RecyclerView
+       android:id="@+id/recycleFriends"
+       android:layout_width="match_parent"
+       android:layout_height="165dp"
+       app:layout_constraintLeft_toLeftOf="parent"
+       android:layout_margin="@dimen/view_1"
+       android:padding="@dimen/view_1"
+       app:layout_constraintTop_toBottomOf="@+id/tvTop"/>
+
+       <View
+       android:id="@+id/viewww2"
+       android:layout_width="match_parent"
+       android:layout_height="2dp"
+       android:background="@color/light_gray"
+       app:layout_constraintLeft_toLeftOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/recycleFriends"
+       android:layout_marginTop="@dimen/view_5"/>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

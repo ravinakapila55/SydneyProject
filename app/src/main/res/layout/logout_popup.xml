@@ -1,0 +1,99 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@android:color/transparent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="299dp"
+        android:layout_height="@dimen/view_150dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/white_sharp_corner"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+       <TextView
+            android:id="@+id/tvLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="@color/text_red"
+            android:gravity="center"
+            android:padding="@dimen/view_8"
+            android:text="Logout"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/txt_14"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+
+
+        <TextView
+            android:id="@+id/tvMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/view_15"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Are you sure you want to Logout ?"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvLabel" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="@dimen/view_15"
+            android:layout_marginLeft="@dimen/view_10"
+            android:layout_marginRight="@dimen/view_10"
+            app:layout_constraintTop_toBottomOf="@+id/tvMsg">
+
+
+        <TextView
+            android:id="@+id/tvOk"
+            android:layout_width="@dimen/view_80"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/view_5"
+            android:layout_marginBottom="@dimen/view_5"
+            android:background="@drawable/orange_background_corner"
+            android:gravity="center"
+            android:padding="@dimen/view_5"
+            android:text="OK"
+            android:textColor="@color/white_color"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+           app:layout_constraintTop_toTopOf="parent"/>
+
+
+        <TextView
+            android:id="@+id/tvCancel"
+            android:layout_width="@dimen/view_80"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/view_5"
+            android:layout_marginBottom="@dimen/view_5"
+            android:background="@drawable/black_stroke"
+            android:gravity="center"
+            android:padding="@dimen/view_5"
+            android:text="Cancel"
+            android:textColor="@color/text_red"
+            android:textSize="14sp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
